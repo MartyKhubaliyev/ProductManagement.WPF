@@ -1,0 +1,23 @@
+﻿<Window x:Class="ProductManagement.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WPF App" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <!-- Tab for Category -->
+            <TabItem Header="Category">
+                <Frame Name="CategoryFrame" NavigationUIVisibility="Hidden" />
+            </TabItem>
+
+            <!-- Tab for Product -->
+            <TabItem Header="Product">
+                <Frame Name="ProductFrame" NavigationUIVisibility="Hidden" />
+            </TabItem>
+
+            <!-- Tab for Kafka Events -->
+            <TabItem Header="Kafka Events">
+                <Frame Name="KafkaEventsFrame" NavigationUIVisibility="Hidden" />
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
